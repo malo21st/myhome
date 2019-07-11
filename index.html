@@ -55,6 +55,7 @@
         <li class="main active"><a href="#_1">はじめに</a></li>
             <li><a href="#commands">Commands</a></li>
             <li><a href="#project-layout">Project layout</a></li>
+            <li><a href="#python-code">Python Code</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -69,11 +70,34 @@
 <li><code>mkdocs help</code> - Print this help message.</li>
 </ul>
 <h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
     ...       # Other markdown pages, images and other files.
-</code></pre></div>
+</pre></div>
+</td></tr></table>
+
+<h2 id="python-code">Python Code</h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>``` python
+&quot;&quot;&quot; Bubble sort &quot;&quot;&quot;
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] &amp;gt; items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+</pre></div>
+</td></tr></table></div>
         </div>
 
         <footer class="col-md-12">
@@ -156,5 +180,5 @@ docs/
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-07-11 21:33:53
+Build Date UTC : 2019-07-11 21:53:04
 -->
