@@ -86,16 +86,12 @@ docs/
 3
 4
 5
-6
-7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>``` python
-&quot;&quot;&quot; Bubble sort &quot;&quot;&quot;
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] &amp;gt; items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot; Bubble sort &quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
 </pre></div>
 </td></tr></table></div>
         </div>
@@ -180,5 +176,5 @@ def bubble_sort(items):
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-07-11 21:53:04
+Build Date UTC : 2019-07-11 21:55:08
 -->
