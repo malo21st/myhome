@@ -341,6 +341,7 @@
 <ul>
 <li>行(row)のループ        iterrows  itertuples</li>
 <li>列(columns)のループ    iteritems</li>
+<li>Seriesは、それ自体がイテラブル</li>
 </ul>
 </div>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
@@ -355,10 +356,12 @@
 10
 11
 12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># 行(row)のループ index と row</span>
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># 行(row)のループ</span>
+<span class="c1">## index と row</span>
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
 
-<span class="c1"># 行(row)のループ row のみ</span>
+<span class="c1">## row のみ</span>
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
 
 <span class="c1"># 列(columns)のループ</span>
