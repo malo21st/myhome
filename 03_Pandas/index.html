@@ -233,6 +233,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#02-dataframe" title="02 DataFrameのループ処理" class="md-nav__link">
+    02 DataFrameのループ処理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#01-pandas_profiling" title="01 pandas_profiling" class="md-nav__link">
     01 pandas_profiling
   </a>
@@ -295,6 +302,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#02-dataframe" title="02 DataFrameのループ処理" class="md-nav__link">
+    02 DataFrameのループ処理
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#01-pandas_profiling" title="01 pandas_profiling" class="md-nav__link">
     01 pandas_profiling
   </a>
@@ -321,6 +335,42 @@
                 <h1 id="pandas">Pandas</h1>
 <p>データサイエンスをするなら pandas を使いこなすことが大事かなと思い、ちょこちょこ書いていこうと思う。</p>
 <p>pandas <a href="https://pandas.pydata.org/">https://pandas.pydata.org/</a></p>
+<h2 id="02-dataframe">02 DataFrameのループ処理</h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li>行(row)のループ        iterrows  itertuples</li>
+<li>列(columns)のループ    iteritems</li>
+</ul>
+</div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># 行(row)のループ</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+
+<span class="c1"># 行(row)のループ</span>
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
+
+<span class="c1"># 列(columns)のループ</span>
+<span class="k">for</span> <span class="n">column_name</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+
+<span class="c1"># Series ＝　DataFrameの列指定　のループ</span>
+<span class="k">for</span> <span class="n">age</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]:</span>
+
+<span class="k">for</span> <span class="n">age</span><span class="p">,</span> <span class="n">point</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;point&#39;</span><span class="p">]):</span>
+</pre></div>
+</td></tr></table>
+
 <h2 id="01-pandas_profiling">01 pandas_profiling</h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -334,7 +384,7 @@
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot; pip install pandas-profiling &quot;&quot;&quot;</span>
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># pip install pandas-profiling</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">pandas_profiling</span> <span class="kn">as</span> <span class="nn">pdp</span>
 
