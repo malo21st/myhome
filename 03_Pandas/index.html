@@ -355,16 +355,16 @@
 10
 11
 12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># 行(row)のループ</span>
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1"># 行(row)のループ index と row</span>
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
 
-<span class="c1"># 行(row)のループ</span>
+<span class="c1"># 行(row)のループ row のみ</span>
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
 
 <span class="c1"># 列(columns)のループ</span>
 <span class="k">for</span> <span class="n">column_name</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
 
-<span class="c1"># Series ＝　DataFrameの列指定　のループ</span>
+<span class="c1"># DataFrameの列指定(Seriesと同じ)　のループ</span>
 <span class="k">for</span> <span class="n">age</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]:</span>
 
 <span class="k">for</span> <span class="n">age</span><span class="p">,</span> <span class="n">point</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;point&#39;</span><span class="p">]):</span>
