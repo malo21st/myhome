@@ -340,7 +340,7 @@
 <p class="admonition-title">Tip</p>
 <ul>
 <li>行(row)のループ        iterrows  itertuples</li>
-<li>列(columns)のループ    iteritems</li>
+<li>列(column)のループ iteritems</li>
 <li>Seriesは、それ自体がイテラブル</li>
 </ul>
 </div>
@@ -365,7 +365,7 @@
 <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
 
 <span class="c1"># 列(columns)のループ</span>
-<span class="k">for</span> <span class="n">column_name</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+<span class="k">for</span> <span class="n">column</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
 
 <span class="c1"># DataFrameの列指定(Seriesと同じ)　のループ</span>
 <span class="k">for</span> <span class="n">age</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]:</span>
