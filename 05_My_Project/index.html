@@ -36,7 +36,7 @@
     
     
       
-        <title>Python Library - malo21st の 雑記帳</title>
+        <title>My Project - malo21st の 雑記帳</title>
       
     
     
@@ -75,7 +75,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#python-library" tabindex="1" class="md-skip">
+      <a href="#my-project" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -101,7 +101,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Python Library
+                My Project
               
             </span>
           
@@ -216,6 +216,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../04_Python_Library/" title="Python Library" class="md-nav__link">
+      Python Library
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -226,22 +238,46 @@
       
     
     
-    <a href="./" title="Python Library" class="md-nav__link md-nav__link--active">
-      Python Library
-    </a>
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        My Project
+      </label>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../05_My_Project/" title="My Project" class="md-nav__link">
+    <a href="./" title="My Project" class="md-nav__link md-nav__link--active">
       My Project
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01" title="01 やりたいこと（概要）" class="md-nav__link">
+    01 やりたいこと（概要）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02" title="02 もっと具体的に（詳細）" class="md-nav__link">
+    02 もっと具体的に（詳細）
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -274,6 +310,29 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#01" title="01 やりたいこと（概要）" class="md-nav__link">
+    01 やりたいこと（概要）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02" title="02 もっと具体的に（詳細）" class="md-nav__link">
+    02 もっと具体的に（詳細）
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -285,8 +344,24 @@
               
                 
                 
-                <h1 id="python-library">Python Library</h1>
-<p>Python の豊富な Library をメモしていきたいと思います。</p>
+                <h1 id="my-project">My Project</h1>
+<p>実学としてのデーターサイエンスを考えた時、何か具体的に行動を起こすべきという結論に至り、マイプロジェクトとして挑戦したいと思う。</p>
+<h2 id="01">01 やりたいこと（概要）</h2>
+<ul>
+<li>佐賀市は、バスの運行状況をリアルタイム（15秒間隔）で提供している。</li>
+<li>この情報を一定期間蓄える。</li>
+<li>時刻表と比べてコンスタントに遅れている箇所を分析（抽出）する。</li>
+<li>データと共に分析結果をバス会社に提出する。</li>
+<li>次回の時刻表改定に、分析結果が反映されたら、マイプロジェクト成功。できなければ、失敗。</li>
+</ul>
+<h2 id="02">02 もっと具体的に（詳細）</h2>
+<ul>
+<li>バスの乗客が時刻表との遅れを一番気にするのは、朝の通勤時間帯であると仮定し、朝7時30分〜9時のバスの運行状況のデータを15秒間隔で取得し、蓄積する。（とりあえず１ヶ月程度）</li>
+<li>データを蓄えている間に、遅れているバスが一発で分かるWebアプリを開発。（ここでのデータ処理が後のデータ分析に再利用できる）</li>
+<li>蓄えたデータと時刻表を比べ、常時遅れている箇所を分析し、わかり易い形で見える化。</li>
+<li>蓄積したデータと分析結果を佐賀市交通局に提出。</li>
+<li>あとは、結果を待つのみ。</li>
+</ul>
                 
                   
                 
@@ -307,7 +382,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../03_Pandas/" title="Pandas" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../04_Python_Library/" title="Python Library" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -316,19 +391,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Pandas
+                Python Library
               </span>
             </div>
           </a>
         
         
-          <a href="../05_My_Project/" title="My Project" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../99_misc/" title="misc" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                My Project
+                misc
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
